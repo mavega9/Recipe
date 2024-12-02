@@ -1,0 +1,190 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+/* Megan Vega*/
+
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400 );
+
+/*-------------------- CSS RESET --------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* -------------------- ROOT VARIABLES  -------------------- */
+:root {
+    font-family:"Montserrat",sans-serif;
+    --black:#0D0D0D;
+    --white:#F2F2F2;
+    --teal:#7ABFBF;
+    --ocean:rgba(122, 191, 191, .5);
+    --orange:#EB5428;
+}
+
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+body{
+    min-width:414px;
+    background-color:rgba(122, 191, 191, .5);
+}
+img{
+    width:100px;
+}
+header{
+    background-color: #F2F2F2;
+}
+main{
+    background-color: #F2F2F2;
+}
+h1{
+font-size:40px;
+font-family:"Bebas Nueu";
+}
+
+h2{
+    font-size:30px;
+    font-family:'Bebas Nueu';
+
+}
+h3{
+    font-size:25px;
+    font-family:'Montserrat';
+    
+}
+
+.Home{
+    background-color:#EB5428;
+    padding:5px 50px;
+    width:70px;
+    position:relative;
+    left:160px;
+}
+.Avatar{
+    position:relative;
+    text-align:center;
+    bottom:375px;
+    left:160px;
+}
+.menu{
+    position:relative;
+    text-align:center;
+    bottom:420px;
+    right:200px;
+}
+.side-dishes{
+    background-color: #7ABFBF;
+}
+
+nav {
+    grid-area:nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position:fixed;
+    top:0;
+    z-index:5;
+}
+nav ul {
+    grid-area:hamberger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+nav li img {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+nav span {
+    display: block;
+    position: relative;
+    font-size:20px;
+ }
+nav label svg {
+    display: block;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 550px;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+nav a{
+    font-size:20px;
+}
+.container{
+  visibility:hidden;  
+}
+   
+
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
