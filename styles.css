@@ -2,7 +2,7 @@
 /* Megan Vega*/
 
 /* -------------------- IMPORTED FONTS -------------------- */
-@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400 );
+@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
 
 /*-------------------- CSS RESET --------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -56,7 +56,8 @@ table {
 
 /* -------------------- ROOT VARIABLES  -------------------- */
 :root {
-    font-family:"Montserrat",sans-serif;
+    font-family:'Montserrat',sans-serif;
+    font-size:16px;
     --black:#0D0D0D;
     --white:#F2F2F2;
     --teal:#7ABFBF;
@@ -68,32 +69,65 @@ table {
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 body{
     width:414px;
-    background-color:rgba(122, 191, 191, .5);
+    background-color:rgba(122, 191, 191, .5); 
+   
+    
 }
 img{
-    width:50%;
+    width:100%;
 }
 header{
     background-color: #F2F2F2;
+
 }
 main{
     background-color: #F2F2F2;
 }
 h1{
-font-size:40px;
-font-family:"Bebas Nueu";
+font-size:30px;
+font-family:"Bebas Neue",sans-serif;
+font-weight:400px;
+position:relative;
+top:120px;
+text-transform:uppercase;
+text-align:center;
+font-weight:bold;
+letter-spacing:-2px;
 }
 
 h2{
     font-size:30px;
-    font-family:"Bebas Nueu";
+    font-family:"Bebas Nueu",sans-serif;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
 
 }
 h3{
     font-size:25px;
-    font-family:"Montserrat";
+    font-family:"Montserrat",sans-serif;
     
 }
+menu{
+    padding:90px;
+}
+ menu li{
+    background-color:#F2F2F2;
+    position:relative;
+    display: inline;
+    
+ }
+ #description{
+    height:300px;
+ }
+  p{
+    margin:15px;
+    text-align: left;
+    letter-spacing:1px;
+    line-height:normal;
+ }
+
+
 nav {
     grid-area: nav;
     min-width: 414px;
