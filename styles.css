@@ -67,11 +67,11 @@ table {
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 body{
-    min-width:414px;
+    width:414px;
     background-color:rgba(122, 191, 191, .5);
 }
 img{
-    width:100px;
+    width:50%;
 }
 header{
     background-color: #F2F2F2;
@@ -86,49 +86,25 @@ font-family:"Bebas Nueu";
 
 h2{
     font-size:30px;
-    font-family:'Bebas Nueu';
+    font-family:"Bebas Nueu";
 
 }
 h3{
     font-size:25px;
-    font-family:'Montserrat';
+    font-family:"Montserrat";
     
 }
-
-.Home{
-    background-color:#EB5428;
-    padding:5px 50px;
-    width:70px;
-    position:relative;
-    left:160px;
-}
-.Avatar{
-    position:relative;
-    text-align:center;
-    bottom:375px;
-    left:160px;
-}
-.menu{
-    position:relative;
-    text-align:center;
-    bottom:420px;
-    right:200px;
-}
-.side-dishes{
-    background-color: #7ABFBF;
-}
-
 nav {
-    grid-area:nav;
+    grid-area: nav;
     min-width: 414px;
     background-color: #ffffff;
     box-shadow: 0px 3px 3px #bbb;
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
     z-index:5;
 }
 nav ul {
-    grid-area:hamberger;
+    grid-area: hamberger;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -154,7 +130,6 @@ nav label {
 nav span {
     display: block;
     position: relative;
-    font-size:20px;
  }
 nav label svg {
     display: block;
@@ -177,12 +152,7 @@ nav h2 {
     height: 1px;
     width: 1px;
 }
-nav a{
-    font-size:20px;
-}
-.container{
-  visibility:hidden;  
-}
+
    
 
 
