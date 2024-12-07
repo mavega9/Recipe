@@ -68,55 +68,90 @@ table {
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 body{
-    width:414px;
-    background-color:rgba(122, 191, 191, .5); 
-   
-    
+    min-width:414px;
+    background-color:rgba(122, 191, 191, .5);
+    display:grid;
+    grid-template-columns:414px;
+    justify-content:center;
+    align-items:center;
+    margin: auto;   
 }
-img{
-    width:100%;
+header img{
+  width:100%;
 }
-header{
+header {
     background-color: #F2F2F2;
-
+    text-align: center;
+      
 }
 main{
-    background-color: #F2F2F2;
+    background-color: #F2F2F2;   
 }
+
 h1{
 font-size:30px;
 font-family:"Bebas Neue",sans-serif;
-font-weight:400px;
+font-weight:bold;
 position:relative;
-top:120px;
+top:140px;
 text-transform:uppercase;
 text-align:center;
-font-weight:bold;
 letter-spacing:-2px;
+height:150px;
 }
 
 h2{
-    font-size:30px;
+    font-size:25px;
     font-family:"Bebas Nueu",sans-serif;
     text-align:center;
     text-transform:uppercase;
     font-weight:bold;
-
+    padding:10px;
 }
 h3{
     font-size:25px;
     font-family:"Montserrat",sans-serif;
+    text-transform: uppercase;
+    color:#0D0D0D;
     
 }
-menu{
-    padding:90px;
-}
- menu li{
-    background-color:#F2F2F2;
+h3 a{
+    color:#0D0D0D;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
     position:relative;
-    display: inline;
-    
+    bottom:130px;
+    left:130px;
+}
+ h4{
+    visibility: hidden;
  }
+
+#menu{
+    height:130px;
+}
+
+#menu li {
+    color:#EB5428;
+    position:relative;
+    display:inline; 
+    top:50px;
+    left:20px;
+}
+ #menu li a{
+        color:#EB5428;
+        text-decoration: none;  
+    }
+#menu span{
+    position:relative;
+    top:20px;
+    right:40px;
+    text-transform: uppercase;
+    
+   
+ }
+    
  #description{
     height:300px;
  }
@@ -127,6 +162,78 @@ menu{
     line-height:normal;
  }
 
+ dt{
+    font-weight:bold;
+
+ }
+
+ 
+ #side-dishes{
+    background-color:#7ABFBF;
+    
+ }
+#logo{
+    background-color: #EB5428;
+    padding:9.5px 40px;
+    width:100px;
+    height:58px;
+    text-align:center;
+    position:fixed;
+    top:0px;
+    left:130px;
+    resize:none;
+    
+     
+}
+#sign-in{
+    color:#0D0D0D;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align:center;
+    position:fixed;
+    top:-10px;
+    left:290px;
+    width:100px;   
+}
+form{
+    position:relative;
+    bottom:2950px;
+    left:100px; 
+    
+}
+input,button{
+    border-color: #EB5428; 
+    
+}
+button{
+    background-color: #EB5428;
+    position:relative;
+    right:5px;
+}
+.searchbar{
+    visibility: hidden;   
+}
+
+    
+.ingredients{
+    padding:20px;
+       
+}
+.ingredient-list li{
+    line-height: 1.5em;
+    position:relative;
+    left:30px;
+    list-style-type: disc; 
+}
+.Directions{
+    padding:25px;
+}
+.directions-list{
+    line-height: 1.5em;
+    position:relative;
+    left:5px;
+    list-style-type:decimal;
+}
 
 nav {
     grid-area: nav;
@@ -136,6 +243,7 @@ nav {
     position: fixed;
     top: 0;
     z-index:5;
+    
 }
 nav ul {
     grid-area: hamberger;
@@ -187,8 +295,369 @@ nav h2 {
     width: 1px;
 }
 
+ dt,dd{
+    
+    display:inline;
+    line-height:1.5;
+    position:relative;
+    left:20px;
    
+ }
+   
+aside{
+    background-color:#7ABFBF;
+    margin:0%;
+    height:950px;
+    
+     
+}
+aside h2{
+    padding:30px;
+    margin:0%;
+}
+aside img{
+    width:30%;
+    margin:0%;
+}
+.rating1  dd{
+    visibility:collapse;
+    margin:0%;
+ }
+ .rating2 dd{
+    visibility:collapse;
+    
+ }
+ .rating3 dd{
+    visibility: collapse;
+ }
+ .rating4 dd{
+    visibility: collapse;
+ }
+ .info1{
+    position:relative;
+    bottom:90px;
+    left:130px;
+    margin:0%;
+ }
+ .info2{
+    position:relative;
+    bottom:90px;
+    left:130px;
+    margin:0%;
+ }
+ .info3{
+    position:relative;
+    bottom:90px;
+    left:130px;
+    margin:0%;
+ }
+ .info4{
+    position:relative;
+    bottom:90px;
+    left:130px;
+    margin:0%;
+ }
+ .rating1 {
+    position:relative;
+    bottom:100px;
+    left:125px;
+    margin:0%; 
+ }
 
+ .rating2{
+    position:relative;
+    bottom:100px;
+    left:125px;
+    margin:0%;
+ }
+ .rating3{
+    position:relative;
+    bottom:100px;
+    left:125px;
+    margin:0%;
+ }
+ .rating4{
+    position:relative;
+    bottom:100px;
+    left:125px;
+    margin:0%;
+ }
+footer{
+    background-color: #ffffff;
+    height:450px;
+    
+   
+}
+footer img{
+    width:70%;
+    position:relative;
+    left:60px;
+    bottom:240px;
+   }
+   footer li a{
+    color:#EB5428;
+    text-decoration: none;
+    position:relative;
+    display:grid;
+   }
+
+#facebook{
+    position:relative;
+    bottom:30px;
+    left:20px;  
+}
+ #facebook span{
+    position:relative;
+    right:10px;
+    text-transform: uppercase;
+ }
+ #Instagram{
+    position:relative;
+    bottom:87px;
+    left:150px;
+ }
+ #Instagram span{
+    position:relative;
+    right:30px;
+    text-transform: uppercase;
+ }
+ #Youtube{
+    position:relative;
+    bottom:142.5px;
+    left:250px;
+ }
+  
+ #Youtube span{
+    position:relative;
+    text-transform: uppercase;
+    right:15px;
+ }
+
+#tiktok{
+    position:relative;
+    bottom:198px;
+    left:350px;
+}
+#tiktok span{
+    text-transform: uppercase;
+    position:relative;
+    right:15px;
+}
+.copyright{
+    text-transform: uppercase;
+    font-weight:bold;
+    position:relative;
+    top:90px;
+    text-align: center;
+    right:5px;
+    display:block;
+ 
+}
+#follows{
+    visibility:collapse;
+}   
+#connect{
+    visibility:collapse;
+}
+ #Good{
+    visibility:collapse;
+ }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width:768px){
+    body{
+    min-width:768px;
+    max-width:1280px;
+   
+    background-color:rgba(122, 191, 191, .5);
+    display:grid;
+    grid-template-columns:768px;
+    justify-content:center;
+    align-items:center;
+    margin: auto; 
+    }
+
+    nav {
+        grid-area: nav;
+        min-width: 768px;
+    }
+
+    aside img{
+    width:18%;
+    }
+
+    #Guacamole{
+    color:#EB5428;
+    position:relative;
+    bottom:290px; 
+  
+}
+.Tortilla{
+    position:relative;
+   bottom:540px;
+   left:380px;
+}
+.salsas{
+    position:relative;
+    bottom:249.5px;
+    left:380px;
+}
+.avacadodip{
+    position:relative;
+    bottom:5px;
+    left:20px;
+}
+.corntortilla{
+    position:relative;
+    bottom:10px;
+    left:20px;
+}
+
+.rice{
+    position:relative;
+    bottom:5px;
+    left:20px;
+    
+}
+.salsaname{
+    position:relative;
+    bottom:5px;
+    left:20px;
+}
+
+.info1{
+    position:relative;
+    right:auto;
+    left:140px;
+}
+.info2{
+    position:relative;
+    right:auto;
+    left:140px;
+}
+.info3{
+    position:relative;
+    bottom:380px;
+    right:auto;
+    left:140px;
+    top:auto;
+    
+    
+}
+.info4{
+    position:relative;
+    bottom:630px;
+    right:auto;
+    left:525px;
+}
+.rating1{
+    position:relative;
+    bottom:115px;
+    top:auto;
+    right:20px;
+    left:auto;
+}
+.rating2{
+    position:relative;
+    top:10px;
+    bottom:auto;
+}
+    footer img{
+        width:35%;
+    }
+    .copyright{
+        position:relative;
+        right:190px;
+    }
+    #facebook{
+        position:relative;
+        bottom:30px;
+        left:380px;  
+    }
+     #facebook span{
+        position:relative;
+        right:30px;
+        text-transform: uppercase;
+     }
+     #Instagram{
+        position:relative;
+        bottom:87px;
+        left:500px;
+     }
+     #Instagram span{
+        position:relative;
+        right:30px;
+        text-transform: uppercase;
+     }
+     #Youtube{
+        position:relative;
+        bottom:142.5px;
+        left:600px;
+     }
+      
+     #Youtube span{
+        position:relative;
+        text-transform: uppercase;
+        right:15px;
+     }
+    
+    #tiktok{
+        position:relative;
+        bottom:198px;
+        left:700px;
+    }
+    #tiktok span{
+        text-transform: uppercase;
+        position:relative;
+        right:15px;
+    }
+    #menu {
+       backdrop-filter: blur(70px);
+       padding:10px;
+       position:relative;
+       top:150px;   
+    }
+    dt,dd{
+        position:relative;
+        left:300px;
+        line-height:25px;
+       justify-content: space-between;
+    }
+    .ingredients{
+        text-align:left;
+    }
+   .directions-list{
+    width:545px;
+    line-height:35px;
+    position:relative;
+    bottom:330px;
+    left:200px;
+   }
+.Directionsh2{
+    position:relative;
+    bottom:320px;
+    left:50px;
+}
+.Directions{
+    padding:0px;
+}
+  form{
+    bottom:3530px;
+    z-index:6;
+    left:430px;
+  }
+
+
+}
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width:1280px){
+body{
+    width:1280px;
+    background-color:rgba(122, 191, 191, .5);
+    display:grid;
+    grid-template-columns:1280px;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+}
+}
