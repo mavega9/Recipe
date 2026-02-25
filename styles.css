@@ -1,663 +1,264 @@
-/* -------------------- CSS BY NAME -------------------------------------- */
-/* Megan Vega*/
-
 /* -------------------- IMPORTED FONTS -------------------- */
-@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
+/* Fixed URL: Replaced the 'share' link with the direct import link */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
-/*-------------------- CSS RESET --------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* -------------------- ROOT VARIABLES  -------------------- */
+/* -------------------- ROOT VARIABLES -------------------- */
 :root {
-    font-family:'Montserrat',sans-serif;
-    font-size:16px;
-    --black:#0D0D0D;
-    --white:#F2F2F2;
-    --teal:#7ABFBF;
-    --ocean:rgba(122, 191, 191, .5);
-    --orange:#EB5428;
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --teal: #7ABFBF;
+    --ocean: rgba(122, 191, 191, .5);
+    --orange: #EB5428;
+    --font-main: 'Montserrat', sans-serif;
+    --font-heading: 'Bebas Neue', cursive;
 }
 
-
-/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
-body{
-    min-width:414px;
-    background-color:rgba(122, 191, 191, .5);
-    display:grid;
-    grid-template-columns:414px;
-    justify-content:center;
-    align-items:center;
-    margin: auto;   
-}
-header img{
-  width:100%;
-}
-header {
-    background-color: #F2F2F2;
-    text-align: center;
-      
-}
-main{
-    background-color: #F2F2F2;   
-}
-
-h1{
-font-size:30px;
-font-family:"Bebas Neue",sans-serif;
-font-weight:bold;
-position:relative;
-top:140px;
-text-transform:uppercase;
-text-align:center;
-letter-spacing:-2px;
-height:150px;
-}
-
-h2{
-    font-size:25px;
-    font-family:"Bebas Nueu",sans-serif;
-    text-align:center;
-    text-transform:uppercase;
-    font-weight:bold;
-    padding:10px;
-}
-h3{
-    font-size:25px;
-    font-family:"Montserrat",sans-serif;
-    text-transform: uppercase;
-    color:#0D0D0D;
-    
-}
-h3 a{
-    color:#0D0D0D;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight:bold;
-    position:relative;
-    bottom:130px;
-    left:130px;
-}
- h4{
-    visibility: hidden;
- }
-
-#menu{
-    height:130px;
-}
-
-#menu li {
-    color:#EB5428;
-    position:relative;
-    display:inline; 
-    top:50px;
-    left:20px;
-}
- #menu li a{
-        color:#EB5428;
-        text-decoration: none;  
-    }
-#menu span{
-    position:relative;
-    top:20px;
-    right:40px;
-    text-transform: uppercase;
-    
-   
- }
-    
- #description{
-    height:300px;
- }
-  p{
-    margin:15px;
-    text-align: left;
-    letter-spacing:1px;
-    line-height:normal;
- }
-
- dt{
-    font-weight:bold;
-
- }
-
- 
- #side-dishes{
-    background-color:#7ABFBF;
-    
- }
-#logo{
-    background-color: #EB5428;
-    padding:9.5px 40px;
-    width:100px;
-    height:58px;
-    text-align:center;
-    position:fixed;
-    top:0px;
-    left:130px;
-    resize:none;
-    
-     
-}
-#sign-in{
-    color:#0D0D0D;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align:center;
-    position:fixed;
-    top:-10px;
-    left:290px;
-    width:100px;   
-}
-form{
-    position:relative;
-    bottom:2950px;
-    left:100px; 
-    
-}
-input,button{
-    border-color: #EB5428; 
-    
-}
-button{
-    background-color: #EB5428;
-    position:relative;
-    right:5px;
-}
-.searchbar{
-    visibility: hidden;   
-}
-
-    
-.ingredients{
-    padding:20px;
-       
-}
-.ingredient-list li{
-    line-height: 1.5em;
-    position:relative;
-    left:30px;
-    list-style-type: disc; 
-}
-.Directions{
-    padding:25px;
-}
-.directions-list{
-    line-height: 1.5em;
-    position:relative;
-    left:5px;
-    list-style-type:decimal;
-}
-
-nav {
-    grid-area: nav;
-    min-width: 414px;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 3px #bbb;
-    position: fixed;
-    top: 0;
-    z-index:5;
-    
-}
-nav ul {
-    grid-area: hamberger;
-    padding: 0;
+/* -------------------- CSS RESET -------------------- */
+* {
     margin: 0;
-    list-style: none;
-    overflow: hidden;
-    max-height: 0;
+    padding: 0;
+    box-sizing: border-box; /* Crucial for responsive layouts */
 }
-nav li img {
-    display: none;
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--ocean);
+    line-height: 1.6;
+    color: var(--black);
 }
-nav li a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-}
-nav label {
-    cursor: pointer;
-    display: inline-block;
-    user-select: none;
-    position: relative;
-    bottom: 5px;
-    left: 30px;
-}
-nav span {
-    display: block;
-    position: relative;
- }
-nav label svg {
+
+img {
+    max-width: 100%;
     display: block;
 }
-label span:before, label span:after {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
+
+/* -------------------- NAVIGATION (Mobile First) -------------------- */
+.main-nav {
+    background-color: white;
+    padding: 10px 20px;
+    position: sticky; /* Keeps nav at top while scrolling */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    background-color: var(--orange);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.nav-links {
+    display: none; /* Hidden by default on mobile */
     width: 100%;
-}
-nav input {
-    display: none;
-}
-nav input:checked ~ ul {
-    max-height: 550px;
-}
-nav h2 {
-    visibility: hidden;
-    height: 1px;
-    width: 1px;
+    list-style: none;
+    padding: 20px 0;
 }
 
- dt,dd{
-    
-    display:inline;
-    line-height:1.5;
-    position:relative;
-    left:20px;
-   
- }
-   
-aside{
-    background-color:#7ABFBF;
-    margin:0%;
-    height:950px;
-    
-     
-}
-aside h2{
-    padding:30px;
-    margin:0%;
-}
-aside img{
-    width:30%;
-    margin:0%;
-}
-.rating1  dd{
-    visibility:collapse;
-    margin:0%;
- }
- .rating2 dd{
-    visibility:collapse;
-    
- }
- .rating3 dd{
-    visibility: collapse;
- }
- .rating4 dd{
-    visibility: collapse;
- }
- .info1{
-    position:relative;
-    bottom:90px;
-    left:130px;
-    margin:0%;
- }
- .info2{
-    position:relative;
-    bottom:90px;
-    left:130px;
-    margin:0%;
- }
- .info3{
-    position:relative;
-    bottom:90px;
-    left:130px;
-    margin:0%;
- }
- .info4{
-    position:relative;
-    bottom:90px;
-    left:130px;
-    margin:0%;
- }
- .rating1 {
-    position:relative;
-    bottom:100px;
-    left:125px;
-    margin:0%; 
- }
-
- .rating2{
-    position:relative;
-    bottom:100px;
-    left:125px;
-    margin:0%;
- }
- .rating3{
-    position:relative;
-    bottom:100px;
-    left:125px;
-    margin:0%;
- }
- .rating4{
-    position:relative;
-    bottom:100px;
-    left:125px;
-    margin:0%;
- }
-footer{
-    background-color: #ffffff;
-    height:450px;
-    
-   
-}
-footer img{
-    width:70%;
-    position:relative;
-    left:60px;
-    bottom:240px;
-   }
-   footer li a{
-    color:#EB5428;
+.nav-links li a {
     text-decoration: none;
-    position:relative;
-    display:grid;
-   }
+    color: var(--black);
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+}
 
-#facebook{
-    position:relative;
-    bottom:30px;
-    left:20px;  
+#dropdown:checked ~ .nav-links {
+    display: block; /* Shows menu when checkbox is clicked */
 }
- #facebook span{
-    position:relative;
-    right:10px;
-    text-transform: uppercase;
- }
- #Instagram{
-    position:relative;
-    bottom:87px;
-    left:150px;
- }
- #Instagram span{
-    position:relative;
-    right:30px;
-    text-transform: uppercase;
- }
- #Youtube{
-    position:relative;
-    bottom:142.5px;
-    left:250px;
- }
-  
- #Youtube span{
-    position:relative;
-    text-transform: uppercase;
-    right:15px;
- }
 
-#tiktok{
-    position:relative;
-    bottom:198px;
-    left:350px;
+.menu-label {
+    cursor: pointer;
+    color: var(--orange);
+    font-weight: bold;
 }
-#tiktok span{
-    text-transform: uppercase;
-    position:relative;
-    right:15px;
+
+/* -------------------- MAIN CONTENT -------------------- */
+.grid-wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
 }
-.copyright{
-    text-transform: uppercase;
-    font-weight:bold;
-    position:relative;
-    top:90px;
+
+main {
+    padding: 20px;
+}
+
+.recipe-header h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--orange);
     text-align: center;
-    right:5px;
-    display:block;
- 
-}
-#follows{
-    visibility:collapse;
-}   
-#connect{
-    visibility:collapse;
-}
- #Good{
-    visibility:collapse;
- }
-
-/*-------------------- MEDIA QUERY (medium) --------------------------------*/
-@media screen and (min-width:768px){
-    body{
-    min-width:768px;
-    max-width:1280px;
-   
-    background-color:rgba(122, 191, 191, .5);
-    display:grid;
-    grid-template-columns:768px;
-    justify-content:center;
-    align-items:center;
-    margin: auto; 
-    }
-
-    nav {
-        grid-area: nav;
-        min-width: 768px;
-    }
-
-    aside img{
-    width:18%;
-    }
-
-    #Guacamole{
-    color:#EB5428;
-    position:relative;
-    bottom:290px; 
-  
-}
-.Tortilla{
-    position:relative;
-   bottom:540px;
-   left:380px;
-}
-.salsas{
-    position:relative;
-    bottom:249.5px;
-    left:380px;
-}
-.avacadodip{
-    position:relative;
-    bottom:5px;
-    left:20px;
-}
-.corntortilla{
-    position:relative;
-    bottom:10px;
-    left:20px;
+    margin-bottom: 20px;
 }
 
-.rice{
-    position:relative;
-    bottom:5px;
-    left:20px;
-    
-}
-.salsaname{
-    position:relative;
-    bottom:5px;
-    left:20px;
+.hero-img {
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.info1{
-    position:relative;
-    right:auto;
-    left:140px;
+.action-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 20px;
 }
-.info2{
-    position:relative;
-    right:auto;
-    left:140px;
-}
-.info3{
-    position:relative;
-    bottom:380px;
-    right:auto;
-    left:140px;
-    top:auto;
-    
-    
-}
-.info4{
-    position:relative;
-    bottom:630px;
-    right:auto;
-    left:525px;
-}
-.rating1{
-    position:relative;
-    bottom:115px;
-    top:auto;
-    right:20px;
-    left:auto;
-}
-.rating2{
-    position:relative;
-    top:10px;
-    bottom:auto;
-}
-    footer img{
-        width:35%;
-    }
-    .copyright{
-        position:relative;
-        right:190px;
-    }
-    #facebook{
-        position:relative;
-        bottom:30px;
-        left:380px;  
-    }
-     #facebook span{
-        position:relative;
-        right:30px;
-        text-transform: uppercase;
-     }
-     #Instagram{
-        position:relative;
-        bottom:87px;
-        left:500px;
-     }
-     #Instagram span{
-        position:relative;
-        right:30px;
-        text-transform: uppercase;
-     }
-     #Youtube{
-        position:relative;
-        bottom:142.5px;
-        left:600px;
-     }
-      
-     #Youtube span{
-        position:relative;
-        text-transform: uppercase;
-        right:15px;
-     }
-    
-    #tiktok{
-        position:relative;
-        bottom:198px;
-        left:700px;
-    }
-    #tiktok span{
-        text-transform: uppercase;
-        position:relative;
-        right:15px;
-    }
-    #menu {
-       backdrop-filter: blur(70px);
-       padding:10px;
-       position:relative;
-       top:150px;   
-    }
-    dt,dd{
-        position:relative;
-        left:300px;
-        line-height:25px;
-       justify-content: space-between;
-    }
-    .ingredients{
-        text-align:left;
-    }
-   .directions-list{
-    width:545px;
-    line-height:35px;
-    position:relative;
-    bottom:330px;
-    left:200px;
-   }
-.Directionsh2{
-    position:relative;
-    bottom:320px;
-    left:50px;
-}
-.Directions{
-    padding:0px;
-}
-  form{
-    bottom:3530px;
-    z-index:6;
-    left:430px;
-  }
 
+.action-menu a {
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
 
+/* Details List Styling */
+.details-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
-/*-------------------- MEDIA QUERY (large) ------------------------------------*/
-@media screen and (min-width:1280px){
-body{
-    width:1280px;
-    background-color:rgba(122, 191, 191, .5);
-    display:grid;
-    grid-template-columns:1280px;
-    justify-content:center;
-    align-items:center;
-    margin: auto;
+
+.details-list dt { font-weight: bold; }
+
+/* -------------------- SIDEBAR -------------------- */
+.sidebar {
+    background-color: var(--teal);
+    padding: 30px 20px;
 }
+
+.sidebar h2 {
+    font-family: var(--font-heading);
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.side-card {
+    display: flex;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.side-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-info h3 a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 1.1rem;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    background: white;
+    padding: 40px 20px;
+    border-top: 5px solid var(--orange);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.social ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.social a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+/* -------------------- MEDIA QUERIES (Desktop) -------------------- */
+@media screen and (min-width: 992px) {
+    .grid-wrapper {
+        grid-template-columns: 1fr 350px; /* Main content + Sidebar */
+    }
+
+    .nav-links {
+        display: flex; /* Horizontal menu on desktop */
+        width: auto;
+        gap: 30px;
+    }
+
+    .menu-label, #dropdown {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* -------------------- UPDATED FOOTER & STARS -------------------- */
+
+/* Ensure the footer container keeps items centered and stacked on mobile */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Specific rule for the footer image to stay centered above 992px */
+.footer-logo img {
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally */
+    max-width: 200px;  /* Keeps it a reasonable size */
+}
+
+/* Star styling to match your orange theme */
+.stars {
+    display: flex;
+    gap: 2px;
+    margin-top: 5px;
+}
+
+.stars svg {
+    fill: var(--orange);
+    stroke: white;
+}
+
+.stars svg.empty {
+    fill: #ffffff;
+    stroke: #ccc;
+}
+
+/* Desktop Adjustment for Footer */
+@media screen and (min-width: 992px) {
+    .footer-container {
+        /* This keeps the social links and logo section centered even when wide */
+        justify-content: center; 
+        gap: 50px;
+    }
 }
